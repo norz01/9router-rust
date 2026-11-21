@@ -1,0 +1,33 @@
+{
+  "schema": "rust-anything/front-door@1",
+  "name": "9router-go",
+  "commands": [],
+  "units": [],
+  "kind": "http",
+  "routes": [
+    "GET /health",
+    "GET /api/hello",
+    "GET /v1/add",
+    "GET /api/h%C3%A9llo%20w%C3%B6rld",
+    "GET /api/%F0%9F%91%8D%F0%9F%8F%BD%20thumbs",
+    "GET /api/%E6%97%A5%E6%9C%AC%E8%AA%9E",
+    "GET /api/",
+    "GET /api/e%CC%81",
+    "GET /api/%C4%B0stanbul",
+    "GET /api/stra%C3%9Fe",
+    "GET /api/%C4%B1l%C4%B1k%20%C4%B1rmak",
+    "GET /api/%F0%9F%91%A8%E2%80%8D%F0%9F%91%A9%E2%80%8D%F0%9F%91%A7%20family",
+    "GET /api/a%C2%A0b",
+    "GET /v1/h%C3%A9llo%20w%C3%B6rld",
+    "GET /v1/%F0%9F%91%8D%F0%9F%8F%BD%20thumbs",
+    "GET /v1/%E6%97%A5%E6%9C%AC%E8%AA%9E",
+    "GET /v1/",
+    "GET /v1/e%CC%81",
+    "GET /v1/%C4%B0stanbul",
+    "GET /v1/stra%C3%9Fe",
+    "GET /v1/%C4%B1l%C4%B1k%20%C4%B1rmak",
+    "GET /v1/%F0%9F%91%A8%E2%80%8D%F0%9F%91%A9%E2%80%8D%F0%9F%91%A7%20family",
+    "GET /v1/a%C2%A0b",
+    "GET /rust-anything-missing"
+  ]
+}

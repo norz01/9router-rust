@@ -8,6 +8,15 @@ web/dist/
 web/.dist-stamp
 _site/
 
+# Rust build artifacts. Each rust/*/ crate is its own Cargo workspace and emits
+# a target/ directory beside its Cargo.toml. `target/` matches at any level, so
+# this single entry covers every crate — including the ones without a
+# per-crate .gitignore (analyticsrange-rs, constants-rs, fastjson-rs,
+# integration-rs, netguard-rs). .rust-anything/ is output from the rust-anything
+# porting tool and is not project source.
+target/
+.rust-anything/
+
 # Test binaries
 *.test
 *.out

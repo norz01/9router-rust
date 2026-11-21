@@ -1,0 +1,20 @@
+[package]
+name = "bootfx-rs"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+publish = false
+description = "Rust port of `internal/integration/bootfx/`: integration test harness that boots the whole application graph"
+
+[lib]
+path = "src/lib.rs"
+
+[profile.release]
+lto = true
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+
+[lints.rust]
+unused_lifetimes = "warn"
+trivial_numeric_casts = "warn"

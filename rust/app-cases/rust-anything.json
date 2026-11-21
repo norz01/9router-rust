@@ -1,0 +1,13 @@
+{
+  "schema": "rust-anything/app-cases@1",
+  "name": "9router-go",
+  "run": [
+    "sh",
+    "-c",
+    "export PORT={port}; exec /tmp/opencode/9router-go"
+  ],
+  "timeout_secs": 30,
+  "http": {
+    "port": null
+  }
+}

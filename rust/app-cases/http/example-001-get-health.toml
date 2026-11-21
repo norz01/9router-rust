@@ -1,0 +1,13 @@
+[request]
+method = "GET"
+path = "/health"
+
+[response]
+status = 200
+
+[response.headers]
+access-control-allow-headers = "*"
+access-control-allow-methods = "GET, OPTIONS"
+access-control-allow-origin = "*"
+content-type = "application/json"
+x-request-id = "req_[..]"

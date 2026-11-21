@@ -1,0 +1,13 @@
+[request]
+method = "GET"
+path = "/v1/"
+
+[response]
+status = 200
+
+[response.headers]
+accept-ranges = "bytes"
+cache-control = "no-cache"
+content-type = "text/html; charset=utf-8"
+vary = "Accept-Encoding"
+x-request-id = "req_[..]"
