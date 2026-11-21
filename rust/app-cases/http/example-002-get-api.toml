@@ -1,0 +1,10 @@
+[request]
+method = "GET"
+path = "/api/hello"
+
+[response]
+status = 200
+
+[response.headers]
+content-type = "text/plain; charset=utf-8"
+x-request-id = "req_[..]"

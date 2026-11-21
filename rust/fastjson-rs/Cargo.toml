@@ -1,0 +1,27 @@
+[package]
+name = "fastjson-rs"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+publish = false
+description = "Rust port of `internal/fastjson/`: deterministic JSON marshaling (sorted map keys, no HTML escaping)"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+# serde_json without `preserve_order` serializes Map as BTreeMap -> sorted keys,
+# matching fastjson's deterministic output. serde_json does not HTML-escape `<`/`>`/`&`,
+# matching fastjson's no-HTML-escape contract.
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+lto = true
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+
+[lints.rust]
+unused_lifetimes = "warn"
+trivial_numeric_casts = "warn"

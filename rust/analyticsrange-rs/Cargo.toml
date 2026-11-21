@@ -1,0 +1,23 @@
+[package]
+name = "analyticsrange-rs"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+publish = false
+description = "Rust port of `internal/analyticsrange/`: resolves the time window an analytics read covers"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+chrono = "0.4"
+
+[profile.release]
+lto = true
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+
+[lints.rust]
+unused_lifetimes = "warn"
+trivial_numeric_casts = "warn"

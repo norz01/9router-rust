@@ -1,0 +1,102 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "/home/norz/projek/rust/9router-rust",
+  "unit": "internal/shutdown/",
+  "language": "go",
+  "kind": "ffi",
+  "crate_name": "shutdown-rs",
+  "exports": [
+    {
+      "name": "Fired",
+      "file": "internal/shutdown/shutdown.go",
+      "line": 29,
+      "params": [],
+      "returns": "boolean",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "(bool)",
+      "prototype": "func Fired() bool"
+    },
+    {
+      "name": "RequestStop",
+      "file": "internal/shutdown/shutdown.go",
+      "line": 55,
+      "params": [],
+      "returns": "void",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "()",
+      "prototype": "func RequestStop()"
+    },
+    {
+      "name": "TestReset",
+      "file": "internal/shutdown/shutdown.go",
+      "line": 74,
+      "params": [],
+      "returns": "void",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "()",
+      "prototype": "func TestReset()"
+    },
+    {
+      "name": "RunAfterStop",
+      "file": "internal/shutdown/shutdown.go",
+      "line": 105,
+      "params": [],
+      "returns": "void",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "()",
+      "prototype": "func RunAfterStop()"
+    },
+    {
+      "name": "Cancel",
+      "file": "internal/shutdown/shutdown.go",
+      "line": 116,
+      "params": [],
+      "returns": "void",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "()",
+      "prototype": "func Cancel()"
+    }
+  ],
+  "classes": [],
+  "js_only": [
+    {
+      "name": "Done",
+      "file": "internal/shutdown/shutdown.go",
+      "line": 22,
+      "reason": "takes or returns a channel"
+    },
+    {
+      "name": "Context",
+      "file": "internal/shutdown/shutdown.go",
+      "line": 44,
+      "reason": "uses `context.Context` from another package"
+    },
+    {
+      "name": "StopRequested",
+      "file": "internal/shutdown/shutdown.go",
+      "line": 67,
+      "reason": "takes or returns a channel"
+    },
+    {
+      "name": "RestartAfterStop",
+      "file": "internal/shutdown/shutdown.go",
+      "line": 96,
+      "reason": "takes or returns a function"
+    }
+  ]
+}

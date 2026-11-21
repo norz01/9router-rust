@@ -1,0 +1,25 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "/home/norz/projek/rust/9router-rust",
+  "unit": "internal/testnet/",
+  "language": "go",
+  "kind": "ffi",
+  "crate_name": "testnet-rs",
+  "exports": [
+    {
+      "name": "Seal",
+      "file": "internal/testnet/testnet.go",
+      "line": 47,
+      "params": [],
+      "returns": "void",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false,
+      "native_return": "()",
+      "prototype": "func Seal()"
+    }
+  ],
+  "classes": [],
+  "js_only": []
+}
